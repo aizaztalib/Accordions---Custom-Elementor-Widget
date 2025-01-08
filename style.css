@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------
+## Accordion
+--------------------------------------------------------------*/
+.xp-accordions .acc-item {
+  margin-bottom: 10px;
+}
+.xp-accordions .acc-item .acc-toggle {
+  cursor: pointer;
+  justify-content: space-between;
+  overflow: hidden;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1b1e;
+  padding: 9px 20px;
+  background: #f6f6f6;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+}
+.xp-accordions .acc-item .acc-toggle i {
+  float: right;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+.xp-accordions .acc-item .acc-content {
+  display: none;
+  padding: 20px 20px 12px;
+  line-height: 30px;
+}
+.xp-accordions .acc-item .acc-content p:last-child, .xp-accordions .acc-item .acc-content ul:last-child {
+  margin-bottom: 0;
+}
+.xp-accordions .acc-item.current .acc-toggle {
+  background: #C19977;
+  border-color: #C19977;
+  color: #fff;
+}
+.xp-accordions .acc-item.current .acc-toggle i {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.xp-accordions .acc-item:last-child {
+  margin-bottom: 0;
+}
